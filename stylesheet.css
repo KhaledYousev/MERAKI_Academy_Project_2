@@ -1,19 +1,40 @@
 .mainbig {
-display: flex;
-flex-flow: column;
+display:flex;
+flex-direction:row;
 justify-content: space-between;
+gap: 10px;
+flex: 2 0 0 0 2;
+flex-wrap: wrap;
+flex-flow: row wrap;
 }
+.s1_m_s2 {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 2 0 0 0 2;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+.s2mup{
+  
+}
+
 .card {
   border-style: dashed;
   background-color:deeppink;
   outline-color:firebrick;
+  display:list-item;
+  width: 100%;
 }
 .header1{
+ 
   border-style: dashed;
   background-color:blue;
   outline-color:firebrick;
 }
 .side1{
+  display: block;
   border-style: dashed;
   background-color:green;
   outline-color:firebrick;
