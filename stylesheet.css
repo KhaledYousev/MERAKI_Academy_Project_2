@@ -1,0 +1,41 @@
+.mainbig {
+display: flex;
+flex-flow: column;
+justify-content: space-between;
+}
+.card {
+  border-style: dashed;
+  background-color:deeppink;
+  outline-color:firebrick;
+}
+.header1{
+  border-style: dashed;
+  background-color:blue;
+  outline-color:firebrick;
+}
+.side1{
+  border-style: dashed;
+  background-color:green;
+  outline-color:firebrick;
+}
+.middleup{
+  border-style: dashed;
+  background-color:yellow;
+  outline-color:yellow;
+}
+.side4{
+  background-color:blueviolet;
+  outline-color:yellow;
+}
+.side2{
+  background-color:darkorange;
+  outline-color:yellow;
+}
+.middlemiddle{
+  background-color:grey;
+  outline-color:yellow;
+}
+.side3{
+  background-color:aquamarine;
+  outline-color:yellow;
+}
