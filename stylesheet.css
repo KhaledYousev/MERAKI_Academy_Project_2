@@ -1,62 +1,22 @@
-.mainbig {
-display:flex;
-flex-direction:row;
-justify-content: space-between;
-gap: 10px;
-flex: 2 0 0 0 2;
-flex-wrap: wrap;
-flex-flow: row wrap;
+:root {
+  --ff-sans: "Josefin Sans", sans-serif;
+  --base-font: 1.6rem;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --img-bg: url("./purple-striped-lines-design_1440x300.jpg");
+  --clr-primary: hsl(0, 0%, 98%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-page-bg: hsl(235, 21%, 11%);
+  --clr-card-bg: hsl(235, 24%, 19%);
+  --clr-blue: hsl(220, 98%, 61%);
+  --clr-green: hsl(192, 100%, 67%);
+  --clr-pink: hsl(280, 87%, 65%);
+  --clr-gb-1: hsl(236, 33%, 92%);
+  --clr-gb-2: hsl(234, 39%, 75%);
+  --clr-gb-3: hsl(234, 11%, 52%);
+  --clr-gb-4: hsl(237, 12%, 36%);
+  --clr-gb-5: hsl(233, 14%, 35%);
+  --clr-gb-6: hsl(235, 19%, 24%);
+  --clr-box-shadow: hsl(0, 0%, 0%, 0.1);
 }
-.s1_m_s2 {
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  gap: 10px;
-  flex: 2 0 0 0 2;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-}
-.s2mup{
   
-}
-
-.card {
-  border-style: dashed;
-  background-color:deeppink;
-  outline-color:firebrick;
-  display:list-item;
-  width: 100%;
-}
-.header1{
- 
-  border-style: dashed;
-  background-color:blue;
-  outline-color:firebrick;
-}
-.side1{
-  display: block;
-  border-style: dashed;
-  background-color:green;
-  outline-color:firebrick;
-}
-.middleup{
-  border-style: dashed;
-  background-color:yellow;
-  outline-color:yellow;
-}
-.side4{
-  background-color:blueviolet;
-  outline-color:yellow;
-}
-.side2{
-  background-color:darkorange;
-  outline-color:yellow;
-}
-.middlemiddle{
-  background-color:grey;
-  outline-color:yellow;
-}
-.side3{
-  background-color:aquamarine;
-  outline-color:yellow;
-}

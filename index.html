@@ -10,51 +10,48 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>2DO 4U</title>
   </head>
   <body>
-    <div class="mainbig">
-      <header class="card">
-        <h1>2DO 4U</h1>
-      </header>
-      <div class="header1">
-        header1 , log in ,Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Iure, commodi.
+    <header class="card">
+      <h1>2DO 4U</h1>
+      <button id="theme-switcher">
+        <img src="./Graphicloads-Folded-Sun-cloudy-folded.ico" alt="Change color theme" />
+      </button>
+    </header>
+    <main>
+      <div class="card add">
+        <div class="cb-container">
+          <button id="add-btn">+</button>
+        </div>
+        <div class="txt-container">
+          <label for="addt">Create todo</label>
+          <input
+            type="text"
+            class="txt-input"
+            placeholder="Create a new todo..."
+            spellcheck="false"
+            autocomplete="off"
+            id="addt"
+          />
+        </div>
       </div>
-      <div class="s1_m_s2">
-        <div class="side1">
-          <button id="clearcompleted">Clear Completed</button>
-          <div>
-            side 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Deserunt ullam voluptatibus quam placeat a reiciendis.
-            Necessitatibus perferendis qui illum nisi?
-          </div>
+      <ul class="todos"></ul>
+      <div class="card stat">
+        <p class="corner"><span id="items-left">0</span> items left</p>
+        <div class="filter">
+          <button id="all" class="on">All</button>
+          <button id="active">Active</button>
+          <button id="completed">Completed</button>
         </div>
-        <div class="s2mup">
-          <div class="middleup">
-            <div class="container">
-              <button id="addbtn">+</button>
-              middleup
-            </div>
-            <div class="textcontainer">
-              <label for="add2">Create todo</label>
-              <input
-                type="text"
-                class="textinput"
-                placeholder="Create a new 2DO item..."
-                id="new2do"
-              />
-            </div>
-            <div class="side2">side 2 Lorem ipsum dolor sit amet.</div>
-          </div>
-          <div class="side3">side3 Lorem ipsum dolor sit amet.</div>
+        <div class="corner">
+          <button id="clear-completed">Clear Completed</button>
         </div>
-        <div class="middlemiddle">
-          middlemiddle Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-        <div class="side4">side4 Lorem ipsum dolor sit amet.</div>
       </div>
-    </div>
-    <footer></footer>
+    </main>
+    <footer>
+      <p>Drag and drop to reorder list</p>
+    </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
