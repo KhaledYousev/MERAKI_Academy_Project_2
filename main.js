@@ -85,20 +85,17 @@ function main() {
     });
 }
 
-
 function stateTodo(index, completed) {
   const todos = JSON.parse(localStorage.getItem("todos"));
   todos[index].isCompleted = completed;
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-
 function removeTodo(index) {
   const todos = JSON.parse(localStorage.getItem("todos"));
   todos.splice(index, 1);
   localStorage.setItem("todos", JSON.stringify(todos));
 }
-
 
 function removeManyTodo(indexes) {
   let todos = JSON.parse(localStorage.getItem("todos"));
@@ -107,7 +104,6 @@ function removeManyTodo(indexes) {
   });
   localStorage.setItem("todos", JSON.stringify(todos));
 }
-
 
 function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
   if (!todos) {
