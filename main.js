@@ -1,39 +1,39 @@
-function main() {
-  document
-    .getElementById("theme-switcher")
-    .addEventListener("click", function () {
-      document.querySelector("body").classList.toggle("light");
-      const themeImg = this.children[0];
-      themeImg.setAttribute(
-        "src",
-        themeImg.getAttribute("src") === "./icon-sun.svg"
-          ? "./icon-moon.svg"
-          : "./icon-sun.svg"
-      );
-    });
-  addTodo();
-  document.querySelector(".todos").addEventListener("dragover", function (e) {
-    e.preventDefault();
-    if (
-      !e.target.classList.contains("dragging") &&
-      e.target.classList.contains("card")
-    ) {
-      const draggingCard = document.querySelector(".dragging");
-      const cards = [...this.querySelectorAll(".card")];
-      const currPos = cards.indexOf(draggingCard);
-      const newPos = cards.indexOf(e.target);
-      console.log(currPos, newPos);
-      if (currPos > newPos) {
-        this.insertBefore(draggingCard, e.target);
-      } else {
-        this.insertBefore(draggingCard, e.target.nextSibling);
-      }
-      const todos = JSON.parse(localStorage.getItem("todos"));
-      const removed = todos.splice(currPos, 1);
-      todos.splice(newPos, 0, removed[0]);
-      localStorage.setItem("todos", JSON.stringify(todos));
-    }
-  });
+//function main() {
+ // document
+ //   .getElementById("theme-switcher")
+ //   .addEventListener("click", function () {
+ //     document.querySelector("body").classList.toggle("light");
+ //     const themeImg = this.children[0];
+ //     themeImg.setAttribute(
+ //       "src",
+ //       themeImg.getAttribute("src") === "./icon-sun.svg"
+ //         ? "./icon-moon.svg"
+ //         : "./icon-sun.svg"
+ //     );
+ //   });
+ // addTodo();
+ // document.querySelector(".todos").addEventListener("dragover", function (e) {
+ //   e.preventDefault();
+ //   if (
+ //     !e.target.classList.contains("dragging") &&
+ //     e.target.classList.contains("card")
+ //   ) {
+ //     const draggingCard = document.querySelector(".dragging");
+ //     const cards = [...this.querySelectorAll(".card")];
+ //     const currPos = cards.indexOf(draggingCard);
+ //     const newPos = cards.indexOf(e.target);
+ //     console.log(currPos, newPos);
+ //     if (currPos > newPos) {
+ //       this.insertBefore(draggingCard, e.target);
+ //     } else {
+ //       this.insertBefore(draggingCard, e.target.nextSibling);
+ //     }
+ //     const todos = JSON.parse(localStorage.getItem("todos"));
+ //     const removed = todos.splice(currPos, 1);
+ //     todos.splice(newPos, 0, removed[0]);
+ //     localStorage.setItem("todos", JSON.stringify(todos));
+ //   }
+ // });
   const add = document.getElementById("add-btn");
   const txtInput = document.querySelector(".txt-input");
   add.addEventListener("click", function () {
@@ -85,25 +85,25 @@ function main() {
     });
 }
 
-function stateTodo(index, completed) {
+//function stateTodo(index, completed) {
   const todos = JSON.parse(localStorage.getItem("todos"));
   todos[index].isCompleted = completed;
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-function removeTodo(index) {
-  const todos = JSON.parse(localStorage.getItem("todos"));
-  todos.splice(index, 1);
-  localStorage.setItem("todos", JSON.stringify(todos));
-}
+//function removeTodo(index) {
+//  const todos = JSON.parse(localStorage.getItem("todos"));
+//  todos.splice(index, 1);
+//  localStorage.setItem("todos", JSON.stringify(todos));
+//}
 
-function removeManyTodo(indexes) {
-  let todos = JSON.parse(localStorage.getItem("todos"));
-  todos = todos.filter(function (todo, index) {
-    return !indexes.includes(index);
-  });
-  localStorage.setItem("todos", JSON.stringify(todos));
-}
+//function removeManyTodo(indexes) {
+//  let todos = JSON.parse(localStorage.getItem("todos"));
+//  todos = todos.filter(function (todo, index) {
+//    return !indexes.includes(index);
+//  });
+//  localStorage.setItem("todos", JSON.stringify(todos));
+//}
 
 function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
   if (!todos) {
