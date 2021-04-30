@@ -65,7 +65,7 @@ img {
   left: 0;
   top: 25px;
   }
-  
+
 #clock {
   position: fixed;
   bottom: 0;
@@ -367,7 +367,28 @@ footer {
   opacity: 0.5;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 898px) {
+
+ #clock {
+    display: none ;
+    visibility:hidden;
+    transform: scale(0) ; }
+  #logo {
+    display: none ;
+    visibility:hidden;
+    transform: scale(0) ; }
+  
+  #music {
+    display: none ;
+    visibility:hidden;
+    transform: scale(0) ; }
+  #weather {
+    display: none ;
+    visibility:hidden;
+    transform: scale(0) ; }
+  :root {
+     --img-bg: url("./mobilebg.jpg");
+    }
 
 
   .stat {
