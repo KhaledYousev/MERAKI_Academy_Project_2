@@ -3,7 +3,7 @@
   --base-font: 1.6rem;
   --fw-normal: 400;
   --fw-bold: 700;
-  --img-bg: url("./4.jpg");
+  --img-bg: url(" ./4.jpg");
   --clr-primary: hsl(0, 0%, 98%);
   --clr-white: hsl(0, 0%, 100%);
   --clr-page-bg: hsl(235, 21%, 11%);
@@ -21,7 +21,7 @@
 }
 
 body.light {
-  --img-bg: url("./lightback.jpg");
+  --img-bg: url(" ./lightback.jpg");
   --clr-primary: hsl(243, 12%, 30%);
   --clr-page-bg: hsl(0, 0%, 98%);
   --clr-card-bg: hsl(0, 0%, 100%);
