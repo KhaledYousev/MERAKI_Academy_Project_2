@@ -8,13 +8,8 @@
         } else {
           $("#sun").attr("src","./icon-moon.svg");
         }
-    })
+    })   
+    let notcomp = [];
+    let comp = [];
 }); 
-$(document).ready(function(){
-    $("ul").sortable ({axis:'y',containment:"ul"})
-    $('#add-btn').click(function(){
-      var newt = $(".txt-input").value
-      $(newt).appendTo("#addt");
-    })
 
-});

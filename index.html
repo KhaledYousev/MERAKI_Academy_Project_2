@@ -10,7 +10,6 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="15x15" href=" ./Graphicloads-Folded-Sun-cloudy-folded.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"/>
@@ -28,42 +27,19 @@
       <button id="theme-switcher">
         <img id="sun" src=" ./icon-sun.svg" alt/>
       </button>
-    </header>
-    <main>
-      <div class="card add">
-        <div class="cb-container">
-          <button id="add-btn">+</button>
+
+    <div class="music to be added">
+    </div>
+    
+    <div class="container">
+        <input type="text" class="txt" placeholder="Add a task">
+        <div class="notcomp">
+            <h4>Not Completed</h4>
         </div>
-        <div class="txt-container">
-          <label for="addt">Create todo</label>
-          <input
-            type="text"
-            class="txt-input"
-            placeholder="Create a new todo..."
-            spellcheck="false"
-            autocomplete="off"
-            id="addt"
-          />
+        <div class="comp">
+            <h4>Completed</h4>
         </div>
-      </div>
-      <ul class="todos"></ul>
-      <div class="card stat" id="cardsspace">
-        <p class="corner"><span id="items-left">0</span> items left</p>
-        <div class="filter">
-          <button id="all" class="on">All</button>
-          <button id="active">Active</button>
-          <button id="completed">Completed</button>
-        </div>
-        <div class="corner">
-          <button id="clear-completed">Clear Completed</button>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>Drag and drop to reorder list</p>
-    </footer>
-    <script id='music' src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-56993745-95c0-4371-9f14-02f099b5c928"></div>
+    </div>
     </footer>
     <script src="./main.js"></script>
   </body>
