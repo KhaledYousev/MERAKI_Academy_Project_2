@@ -1,5 +1,5 @@
 //create function for theme-switcher
-  $(document).ready(function(){
+  $ (document).ready(function(){
     $('#theme-switcher').click(function(){
         let element = document.body; 
         element.classList.toggle("light");
@@ -10,3 +10,11 @@
         }
     })
 }); 
+$(document).ready(function(){
+    $("ul").sortable ({axis:'y',containment:"ul"})
+    $('#add-btn').click(function(){
+      var newt = $(".txt-input").value
+      $(newt).appendTo("#addt");
+    })
+
+});
