@@ -1,16 +1,12 @@
 //create function for theme-switcher
   $(document).ready(function(){
     $('#theme-switcher').click(function(){
-        var element = document.body;         
-        element.classList.toggle("light"); 
-    });
-});        
-//function main() {
-  //$(document).ready(function(){
-  //    $("#theme-switcher").click(function(){
-  //    var src = $(this).attr('src');
-  //    var newsrc = (src=='./icon-sun.svg"') ? './icon-moon.svg' : './icon-sun.svg';
-   //   $(this).attr('src', newsrc );
-   //   });
-  //})}
-  //console.log(main())
+        let element = document.body; 
+        element.classList.toggle("light");
+        if($("#sun").attr('src') != "./icon-sun.svg"){
+          $("#sun").attr("src","./icon-sun.svg");
+        } else {
+          $("#sun").attr("src","./icon-moon.svg");
+        }
+    })
+}); 
