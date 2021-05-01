@@ -1,3 +1,5 @@
+.notcomp, .comp {
+  display: none;}
 *{
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(./cswseqsrqhx.jpeg);
+  background-image: url(./mountains-foggy-mist-sunrise-turquoise-yellow-sky-gradient-5120x2880-1322.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,18 +16,41 @@ body{
   padding: 0;
 }
 body.light{
-  background-image: url(.csws/eqsrqhx.jpeg);
+  background-image: url(./4.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  color: #000;
+}
+h1.light{
+color: rgb(255, 255, 255);
 }
 #theme-switcher{
   background: transparent;
   border: none;
+}
+#h1{
+  display: inline-block;
+  position: center;
 
+  
+}
+h1{
+  color: black;
+  font-size: 4rem;
+}
+#weather{
+  float: left;
+  top: 10rem;
+  left: 0;
+}
+#logo {
+  float: right;
+top: 0;
+right: 0;
 }
 .container{
   max-width: 800px;
@@ -86,3 +111,15 @@ h4{
   font-size: 20px;
   text-shadow: 0 0 20px #000;
 }
+@media (max-width: 800px) {
+ 
+  #weather {
+    display: none;
+  }
+
+  #music {
+    display: none;
+
+  }
+}
+  
