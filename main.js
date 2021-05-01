@@ -23,4 +23,17 @@
       notcomp.push({
         title: $(".txt").val()
       });
-}); 
+});
+      // creating event listeners for the buttons with task d & c
+      
+      c.click(function() {
+        let t = $(this).parent();
+        checked(t);
+        $(this).remove();
+      });    
+      d.click(function() { 
+        let t = $(this).parent();
+        dele(t);
+      });
+    } 
+  });
