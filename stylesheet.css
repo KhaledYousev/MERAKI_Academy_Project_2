@@ -1,12 +1,14 @@
-.notcomp, .comp {
-  display: none;}
-*{
+.notcomp,
+.comp {
+  display: none;
+}
+* {
   margin: 0;
   padding: 0;
-  font-family: "montserrat",sans-serif;
+  font-family: "montserrat", sans-serif;
   box-sizing: border-box;
 }
-body{
+body {
   background-image: url(./mountains-foggy-mist-sunrise-turquoise-yellow-sky-gradient-5120x2880-1322.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -15,7 +17,7 @@ body{
   margin: 0;
   padding: 0;
 }
-body.light{
+body.light {
   background-image: url(./4.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -25,39 +27,37 @@ body.light{
   padding: 0;
   color: #000;
 }
-h1.light{
-color: rgb(255, 255, 255);
+h1.light {
+  color: rgb(255, 255, 255);
 }
-#theme-switcher{
+#theme-switcher {
   background: transparent;
   border: none;
 }
-#h1{
+#h1 {
   display: inline-block;
   position: center;
-
-  
 }
-h1{
+h1 {
   color: black;
   font-size: 4rem;
 }
-#weather{
+#weather {
   float: left;
   top: 10rem;
   left: 0;
 }
 #logo {
   float: right;
-top: 0;
-right: 0;
+  top: 0;
+  right: 0;
 }
-.container{
+.container {
   max-width: 800px;
   margin: auto;
   padding: 15px;
 }
-.txt{
+.txt {
   width: 100%;
   border: none;
   border-bottom: 2px solid #000;
@@ -67,7 +67,6 @@ right: 0;
   font-size: 18px;
   color: #f5f5f5;
   margin: 40px auto;
-
 }
 .txt::placeholder {
   color: #f5f5f5;
@@ -75,12 +74,12 @@ right: 0;
 .txt:hover {
   background-color: #f5f5f53d;
 }
-h4{
+h4 {
   margin: 10px 0 10px 5px;
   color: #f5f5f5;
   text-shadow: 0px 0px 15px #000;
 }
-.task{
+.task {
   color: black;
   width: 100%;
   background: #ffffff80;
@@ -89,22 +88,20 @@ h4{
   overflow: hidden;
   font-weight: bold;
   text-shadow: 0px 0px 15px #000;
-
 }
-.task i{
+.task i {
   float: right;
   margin-left: 20px;
   cursor: pointer;
-      text-shadow: 0px 0px 15px #000;
-
+  text-shadow: 0px 0px 15px #000;
 }
-.comp .task{
+.comp .task {
   background: #00000080;
   color: #f5f5f5;
 }
 .top {
   position: fixed;
-  top : 15px;
+  top: 15px;
   left: 20px;
   text-align: center;
   color: #f5f5f5;
@@ -112,14 +109,11 @@ h4{
   text-shadow: 0 0 20px #000;
 }
 @media (max-width: 800px) {
- 
   #weather {
     display: none;
   }
 
   #music {
     display: none;
-
   }
 }
-  
