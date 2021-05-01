@@ -24,8 +24,8 @@
         title: $(".txt").val()
       });
 });
-      // creating event listeners for the buttons with task d & c
-      
+      // creating event listeners for the symbols var c var d 
+
       c.click(function() {
         let t = $(this).parent();
         checked(t);
