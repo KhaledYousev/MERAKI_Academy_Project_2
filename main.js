@@ -3,6 +3,8 @@ $ (document).ready(function(){
     $('#theme-switcher').click(function(){
         let element = document.body; 
         element.classList.toggle("light");
+        let h1 = document.getElementById("h1")
+        h1.classList.toggle("light");
         if($("#sun").attr('src') != "./icon-sun.svg"){
           $("#sun").attr("src","./icon-sun.svg");
         } else {
@@ -18,9 +20,9 @@ $ (document).ready(function(){
       $(".notcomp").css("display", "block");
       $.each(notcomp, function (i) {
         $.each(notcomp[i], function() {
-          var t = $("<div class='task'></div>");
-          var d = $("<i class='fas fa-trash-alt'></i>");
-          var c = $("<i class='fas fa-check'></i>");
+          let t = $("<div class='task'></div>");
+          let d = $("<i class='fas fa-trash-alt'></i>");
+          let c = $("<i class='fas fa-check'></i>");
           t.text(notcomp[i].title);
           t.append(d, c);
           $(".notcomp").append(t);
@@ -42,8 +44,8 @@ $ (document).ready(function(){
       $(".comp").css("display", "block");
       $.each(comp, function (i) {
         $.each(comp[i], function() {
-          var t = $("<div class='task'></div>");
-          var d = $("<i class='fas fa-trash-alt'></i>");
+          let t = $("<div class='task'></div>");
+          let d = $("<i class='fas fa-trash-alt'></i>");
           t.text(comp[i].title);
           t.append(d);
           $(".comp").append(t);
@@ -58,9 +60,9 @@ $ (document).ready(function(){
     // create task
     $(".txt").on("keyup", function(e) {
       if (e.keyCode == 13 && $(".txt").val() != "") {
-        var t = $("<div class='task'></div>");
-        var d = $("<i class='fas fa-trash-alt'></i>");
-        var c = $("<i class='fas fa-check'></i>");
+        let t = $("<div class='task'></div>");
+        let d = $("<i class='fas fa-trash-alt'></i>");
+        let c = $("<i class='fas fa-check'></i>");
         $(".notcomp").css("display", "block");
         t.text($(".txt").val());  
         t.append(d,c);
@@ -88,11 +90,11 @@ $ (document).ready(function(){
         t.remove();
       });
       if($('div.notcomp').has(t).length) {
-        var index1 = notcomp.findIndex(x => x.title === t[0].innerText);
+        let index1 = notcomp.findIndex(x => x.title === t[0].innerText);
         notcomp.splice(index1, 1);
         localStorage.setItem("NComp", JSON.stringify(notcomp));
       } else {
-        var index2 = comp.findIndex(x => x.title === t[0].innerText);
+        let index2 = comp.findIndex(x => x.title === t[0].innerText);
         comp.splice(index2, 1);
         localStorage.setItem("Comp", JSON.stringify(comp));
       }
@@ -114,7 +116,7 @@ $ (document).ready(function(){
         title: t[0].innerText
       });
       notcomp = JSON.parse(localStorage.getItem("NComp"));
-      var index = notcomp.findIndex(x => x.title === t[0].innerText);
+      let index = notcomp.findIndex(x => x.title === t[0].innerText);
       notcomp.splice(index, 1);
       localStorage.setItem("NComp", JSON.stringify(notcomp));
       localStorage.setItem("Comp", JSON.stringify(comp));
