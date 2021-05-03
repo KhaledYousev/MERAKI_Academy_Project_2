@@ -1,6 +1,7 @@
-
+//create function for login
+$(".container").hide();
 $(document).ready(function () {
- 
+
   //create function for theme-switcher
   
   $("#theme-switcher").click(function () {
