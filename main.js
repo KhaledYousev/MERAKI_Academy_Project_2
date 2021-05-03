@@ -1,5 +1,8 @@
-//create function for theme-switcher
+
 $(document).ready(function () {
+ 
+  //create function for theme-switcher
+  
   $("#theme-switcher").click(function () {
     let element = document.body;
     element.classList.toggle("light");
