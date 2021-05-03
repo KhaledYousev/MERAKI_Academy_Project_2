@@ -1,5 +1,12 @@
 //create function for login
 $(".container").hide();
+function login() {
+  if ($("#username").val() === "admin" && $("#password").val() === "password") {
+      $(".container").show();
+  } else {
+    alert("You are not a valid user");
+  }
+}
 $(document).ready(function () {
 
   //create function for theme-switcher
