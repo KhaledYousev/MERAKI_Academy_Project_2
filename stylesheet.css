@@ -2,12 +2,10 @@
 .comp {
   display: none;
 }
-
 :root {
   --mainColor: white;
   --contrastColor: Black;
 }
-
 * {
   margin: 0;
   padding: 0;

@@ -13,7 +13,6 @@ function login() {
 }
 $(document).ready(function () {
   //create function for theme-switcher
-
   $("#theme-switcher").click(function () {
     let element = document.body;
     element.classList.toggle("light");
@@ -27,7 +26,6 @@ $(document).ready(function () {
   });
   let notcomp = [];
   let comp = [];
-
   // load local storage
   if (
     localStorage.getItem("NComp") !== "[]" &&
