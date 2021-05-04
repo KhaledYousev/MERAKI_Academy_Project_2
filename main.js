@@ -1,21 +1,19 @@
 //create function for login
 
 $(".container").hide();
-$('#weather').hide();
-
+$("#weather").hide();
 
 function login() {
   if ($("#username").val() === "admin" && $("#password").val() === "password") {
-      $(".container").show();
-      $("#form").hide();
+    $(".container").show();
+    $("#form").hide();
   } else {
     alert("You are not a valid user");
   }
 }
 $(document).ready(function () {
-
   //create function for theme-switcher
-  
+
   $("#theme-switcher").click(function () {
     let element = document.body;
     element.classList.toggle("light");

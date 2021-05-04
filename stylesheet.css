@@ -15,99 +15,104 @@
   box-sizing: border-box;
 }
 
-
-.loginpage{
-position: absolute;
-top:50%;
-left: 50%;
-transform: translate(-50%,-50%);
-width: 50%;
+.loginpage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
 }
-#form{
-width: 100%;
-position: relative;
-/* top:50%;
+#form {
+  width: 100%;
+  position: relative;
+  /* top:50%;
 left: 50%;
 transform: translate(-50%,-50%); */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#username{
+#username {
   box-sizing: border-box;
-  margin-bottom:50px;
- /* width:100px; */
- height:50px;
- border-radius:20px;
- color:var(--mainColor);
- text-align:center;
- line-height:50px;
- box-shadow:
- 20px 5px 40px #CF77F3,
-   0px 5px 40px #009BFF,
-  -20px 5px 40px #2AC9DB;
-  background-image: linear-gradient(-90deg, #CF77F3 0%, #009BFF 47%, #CF77F3 100%);
+  margin-bottom: 50px;
+  /* width:100px; */
+  height: 50px;
+  border-radius: 20px;
+  color: var(--mainColor);
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 20px 5px 40px #cf77f3, 0px 5px 40px #009bff,
+    -20px 5px 40px #2ac9db;
+  background-image: linear-gradient(
+    -90deg,
+    #cf77f3 0%,
+    #009bff 47%,
+    #cf77f3 100%
+  );
   width: 70%;
   align-content: center;
   font-size: 1.7rem;
-    /* position: fixed;
+  /* position: fixed;
     top:16rem;
     left: 12rem; */
-
 }
 
 #username::placeholder {
-  color:var(--mainColor);
+  color: var(--mainColor);
 }
 #password::placeholder {
-  color:var(--mainColor);
+  color: var(--mainColor);
 }
 
 #password {
   box-sizing: border-box;
-  margin-bottom:50px;
- /* width:100px; */
- height:50px;
- border-radius:20px;
- color:var(--mainColor);
- text-align:center;
- line-height:50px;
- box-shadow:
- 20px 5px 40px #CF77F3,
-   0px 5px 40px #009BFF,
-  -20px 5px 40px #2AC9DB;
-  background-image: linear-gradient(-90deg, #CF77F3 0%, #009BFF 47%, #CF77F3 100%);
+  margin-bottom: 50px;
+  /* width:100px; */
+  height: 50px;
+  border-radius: 20px;
+  color: var(--mainColor);
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 20px 5px 40px #cf77f3, 0px 5px 40px #009bff,
+    -20px 5px 40px #2ac9db;
+  background-image: linear-gradient(
+    -90deg,
+    #cf77f3 0%,
+    #009bff 47%,
+    #cf77f3 100%
+  );
   width: 70%;
   align-content: center;
   font-size: 1.7rem;
-    /* position:fixed;
+  /* position:fixed;
     top:20rem;
     left: 12rem; */
-  
 }
-#login{
+#login {
   box-sizing: border-box;
   /* margin:50px; */
- width:100px;
- height:50px;
- border-radius:20px;
- color:var(--mainColor);
- font-weight: bolder;
- text-align:center;
- line-height:50px;
- box-shadow:
- 20px 5px 40px #CF77F3,
-   0px 5px 40px #009BFF,
-  -20px 5px 4 0px #2AC9DB;
-  background-image: linear-gradient(-90deg, #939696 0%, #009BFF 47%, #939696 100%);
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  color: var(--mainColor);
+  font-weight: bolder;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 20px 5px 40px #cf77f3, 0px 5px 40px #009bff,
+    -20px 5px 4 0px #2ac9db;
+  background-image: linear-gradient(
+    -90deg,
+    #939696 0%,
+    #009bff 47%,
+    #939696 100%
+  );
   width: 25%;
   align-content: center;
   font-size: 1.7rem;
-    /* position:fixed;
+  /* position:fixed;
     top:25rem;
     left: 22rem; */
-   
 }
 
 body {
@@ -130,7 +135,7 @@ body.light {
   color: #000;
 }
 h1.light {
-  color:var(--mainColor);
+  color: var(--mainColor);
 }
 #theme-switcher {
   background: transparent;
@@ -162,23 +167,23 @@ h1 {
 .txt {
   width: 100%;
   border: none;
-  border-bottom: 2px solid  var(--contrastColor);;
+  border-bottom: 2px solid var(--contrastColor);
   background: none;
   padding: 10px;
   outline: none;
   font-size: 18px;
-  color:var(--mainColor);
+  color: var(--mainColor);
   margin: 40px auto;
 }
 .txt::placeholder {
-  color:var(--mainColor);
+  color: var(--mainColor);
 }
 .txt:hover {
   background-color: #f5f5f53d;
 }
 h4 {
   margin: 10px 0 10px 5px;
-  color:var(--mainColor);
+  color: var(--mainColor);
   text-shadow: 0px 0px 15px #000;
 }
 .task {
@@ -198,15 +203,15 @@ h4 {
   text-shadow: 0px 0px 15px var(--contrastColor);
 }
 .comp .task {
-  background:var(--contrastColor);
-  color:var(--mainColor);
+  background: var(--contrastColor);
+  color: var(--mainColor);
 }
 .top {
   position: fixed;
   top: 15px;
   left: 20px;
   text-align: center;
-  color:var(--mainColor);
+  color: var(--mainColor);
   font-size: 20px;
   text-shadow: 0 0 20px var(--contrastColor);
 }
