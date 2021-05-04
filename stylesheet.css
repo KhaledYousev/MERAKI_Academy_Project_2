@@ -99,7 +99,7 @@ align-items: center;
  box-shadow:
  20px 5px 40px #CF77F3,
    0px 5px 40px #009BFF,
-  -20px 5px 40px #2AC9DB;
+  -20px 5px 4 0px #2AC9DB;
   background-image: linear-gradient(-90deg, #939696 0%, #009BFF 47%, #939696 100%);
   width: 25%;
   align-content: center;
@@ -141,7 +141,7 @@ h1.light {
   position: center;
 }
 h1 {
-  color: black;
+  color: var(--contrastColor);
   font-size: 4rem;
 }
 #weather {
@@ -162,7 +162,7 @@ h1 {
 .txt {
   width: 100%;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid  var(--contrastColor);;
   background: none;
   padding: 10px;
   outline: none;
@@ -182,23 +182,23 @@ h4 {
   text-shadow: 0px 0px 15px #000;
 }
 .task {
-  color: black;
+  color: var(--contrastColor);
   width: 100%;
   background: #ffffff80;
   padding: 18px;
   margin: 0 0 6px 0;
   overflow: hidden;
   font-weight: bold;
-  text-shadow: 0px 0px 15px #000;
+  text-shadow: 0px 0px 15px var(--contrastColor);
 }
 .task i {
   float: right;
   margin-left: 20px;
   cursor: pointer;
-  text-shadow: 0px 0px 15px #000;
+  text-shadow: 0px 0px 15px var(--contrastColor);
 }
 .comp .task {
-  background: #00000080;
+  background:var(--contrastColor);
   color:var(--mainColor);
 }
 .top {
@@ -208,7 +208,7 @@ h4 {
   text-align: center;
   color:var(--mainColor);
   font-size: 20px;
-  text-shadow: 0 0 20px #000;
+  text-shadow: 0 0 20px var(--contrastColor);
 }
 @media (max-width: 800px) {
   #weather {
