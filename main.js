@@ -6,6 +6,7 @@ $("#weather").hide();
 function login() {
   if ($("#username").val() === "admin" && $("#password").val() === "password") {
     $(".container").show();
+    $("#weather").show();
     $("#form").hide();
   } else {
     alert("You are not a valid user");
